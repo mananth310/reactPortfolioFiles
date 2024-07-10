@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu {
+    @apply hidden md:block ;
+}
+ul li{
+    @apply md:px-3;
+}
+.pg-primary{
+    background-color: purple;
+}
+.text-primary{
+    color: purple;
+}
+.pg-secondary{
+    background-color: #E5E2FF;
+}
+.nav-mobile{
+    @apply fixed top-8 pg-primary p-3 right-0 w-1/2;
+}
+/* ul li::before{
+    content: "*";
+} */
+.project-list{
+    @apply flex flex-col bg-white text-primary w-full p-2 rounded-xl transform hover:scale-110 font-Merienda;
+}
+html{
+    scroll-behavior: smooth;
+}
